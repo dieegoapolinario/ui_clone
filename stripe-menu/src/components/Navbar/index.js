@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Products, Developers, Company } from '../Content';
-import { DropdownProvider, DropdownOption } from '../Dropdown';
+import { DropdownProvider, DropdownOption, DropdownRoot } from '../Dropdown';
 import { Container, DropdownStyles } from './styles';
 
 function Navbar() {
@@ -21,6 +21,8 @@ function Navbar() {
             </li>
           </ul>
         </Container>
+
+        <DropdownRoot />
       </DropdownStyles>
     </DropdownProvider>
   );

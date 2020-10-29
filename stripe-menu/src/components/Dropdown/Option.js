@@ -23,7 +23,7 @@ export function DropdownOption({ name, content: Content, backgroundHeight }) {
 
   useEffect(() => {
     if (!registered && optionDimensions) {
-      const WrapperContent = () => {
+      const WrappedContent = () => {
         const contentRef = useRef();
 
         useEffect(() => {
@@ -42,7 +42,7 @@ export function DropdownOption({ name, content: Content, backgroundHeight }) {
         id,
         optionDimensions,
         optionCenterX: optionDimensions.x + optionDimensions.width / 2,
-        WrapperContent,
+        WrappedContent,
         backgroundHeight,
       });
 

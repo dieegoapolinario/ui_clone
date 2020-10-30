@@ -49,7 +49,7 @@ export function DropdownProvider({ children }) {
     [options]
   );  
 
-  const deleteOptionsById = useCallback(
+  const deleteOptionById = useCallback(
     (id) => {
       setOptions((items) => items.filter((item) => item.id !== id));
     }, 
@@ -65,7 +65,7 @@ export function DropdownProvider({ children }) {
       registerOption,
       updateOptionProps,
       getOptionById,
-      deleteOptionsById,
+      deleteOptionById,
       options,
       targetId,
       setTargetId,
